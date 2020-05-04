@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controler">
+   <children>
+         <ImageView fx:id="background" fitHeight="574.0" fitWidth="739.0" layoutX="-4.0">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textFieldSurname" layoutX="93.0" layoutY="155.0" />
+      <TextField fx:id="textFieldName" layoutX="93.0" layoutY="125.0" />
+      <Label fx:id="LabelValue" layoutX="18.0" layoutY="129.0" text="Name" />
+      <Button fx:id="buttonShowStudents" layoutX="23.0" layoutY="31.0" mnemonicParsing="false" onAction="#buttonShowStudentsClicked" text="Show students" />
+      <ListView fx:id="listView" layoutX="340.0" layoutY="26.0" prefHeight="530.0" prefWidth="363.0" />
+      <Button fx:id="buttonShowSchools" layoutX="121.0" layoutY="31.0" mnemonicParsing="false" onAction="#buttonShowSchoolsClicked" prefHeight="25.0" prefWidth="93.0" text="Show schools" />
+      <Separator layoutY="114.0" prefHeight="1.0" prefWidth="324.0" />
+      <Button fx:id="buttonAddStudent" layoutX="14.0" layoutY="247.0" mnemonicParsing="false" onAction="#buttonAddStudentClicked" text="Add student" />
+      <Label fx:id="LabelValue1" layoutX="18.0" layoutY="159.0" text="Surname" />
+      <Label fx:id="LabelValue2" layoutX="23.0" layoutY="222.0" text="School" />
+      <Label fx:id="LabelValue3" layoutX="20.0" layoutY="191.0" text="Class" />
+      <TextField fx:id="textFieldClass" layoutX="93.0" layoutY="187.0" />
+      <ChoiceBox fx:id="choiceBoxSchool" layoutX="92.0" layoutY="218.0" prefWidth="150.0" />
+      <Separator layoutX="5.0" layoutY="289.0" prefHeight="1.0" prefWidth="324.0" />
+      <Label fx:id="LabelValue4" layoutX="17.0" layoutY="303.0" text="Student id" />
+      <TextField fx:id="textFieldStudentID" layoutX="88.0" layoutY="299.0" />
+      <Label fx:id="LabelValue11" layoutX="18.0" layoutY="339.0" text="New class" />
+      <TextField fx:id="textFieldNewClass" layoutX="88.0" layoutY="335.0" />
+      <Button fx:id="buttonUpdate" layoutX="18.0" layoutY="370.0" mnemonicParsing="false" onAction="#buttonUpdateClicked" text="Update" />
+      <Label fx:id="labelStatus" layoutX="17.0" layoutY="545.0" text="Name" />
+      <Button fx:id="buttonShowstudententsAndSchools" layoutX="23.0" layoutY="67.0" mnemonicParsing="false" onAction="#buttonShowstudententsAndSchoolsClicked" prefHeight="25.0" prefWidth="190.0" text="Show students and schools" />
+      <Separator layoutY="406.0" prefHeight="1.0" prefWidth="324.0" />
+      <TextField fx:id="textFieldStudentIDToDelete" layoutX="89.0" layoutY="416.0" />
+      <Label fx:id="LabelValue41" layoutX="18.0" layoutY="420.0" text="Student id" />
+      <Button fx:id="buttonDelete" layoutX="18.0" layoutY="454.0" mnemonicParsing="false" onAction="#buttonDeleteClicked" text="Delete" />
+      <Separator layoutX="6.0" layoutY="487.0" prefHeight="1.0" prefWidth="324.0" />
+      <Button fx:id="buttonImport" layoutX="88.0" layoutY="508.0" mnemonicParsing="false" onAction="#buttonImportClicked" text="Import" />
+      <Button fx:id="buttonExport" layoutX="16.0" layoutY="508.0" mnemonicParsing="false" onAction="#buttonExportClicked" text="Export" />
+   </children>
+</Pane>
